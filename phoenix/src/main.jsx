@@ -1,0 +1,24 @@
+/**
+ * @copyright 2026 sco.
+ * @license MIT
+ */
+
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { RouterProvider } from 'react-router-dom';
+
+/**
+ * Custom modules
+ */
+import router from './routers/routes';
+
+/**
+ * CSS link
+ */
+import './index.css';
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
+);
